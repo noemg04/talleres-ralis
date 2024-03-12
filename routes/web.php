@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\VehiculoController;
+use App\Http\Controllers\ReparacioneController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('vehiculos', VehiculoController::class);
+
+Route::resource('reparaciones', ReparacioneController::class);
