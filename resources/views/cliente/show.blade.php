@@ -24,7 +24,6 @@
                             <strong>Nombre:</strong>
                             {{ $cliente->nombre }}
                         </div>
-
                     </div>
                 </div>
             </div>

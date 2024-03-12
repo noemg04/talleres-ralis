@@ -13,12 +13,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Reparacione') }}
+                                {{ __('Reparaciones') }}
                             </span>
 
                              <div class="float-right">
                                 <a href="{{ route('reparaciones.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Añadir') }}
                                 </a>
                               </div>
                         </div>
@@ -52,17 +52,18 @@
 
                                             <td>
                                                 <form action="{{ route('reparaciones.destroy',$reparacione->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('reparaciones.show',$reparacione->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('reparaciones.edit',$reparacione->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('reparaciones.show',$reparacione->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Mostrar') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('reparaciones.edit',$reparacione->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Editar') }}</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Eliminar') }}</button>
                                                 </form>
                                             </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
                             </table>
+                            <a href="http://127.0.0.1:8000/home"><button type="button" class="btn btn-success">Volver a la página principal</button></a>
                         </div>
                     </div>
                 </div>

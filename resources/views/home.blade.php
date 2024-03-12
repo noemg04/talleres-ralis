@@ -14,8 +14,14 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('¡Ha iniciado sesión correctamente!') }}
+
                 </div>
+            </div>
+            <div style="margin-top: 2.5%; margin-left: 2.5%;">
+                <a href="http://127.0.0.1:8000/clientes"><button type="button" class="btn btn-primary">Clientes</button></a>
+                <a href="http://127.0.0.1:8000/vehiculos"><button type="button" class="btn btn-primary">Vehiculos</button></a>
+                <a href="http://127.0.0.1:8000/reparaciones"><button type="button" class="btn btn-primary">Reparaciones</button></a>
             </div>
         </div>
     </div>
